@@ -11,6 +11,7 @@ process Lookup_table {
     output:
     path("*.lookup_out.tsv"), emit: lookup_out
     path("*.lookup_out_cleaned.tsv"), emit: lookup_out_cleaned
+    path("*.lookup_out_all.tsv"), emit: lookup_out_all
 
     script:
     

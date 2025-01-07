@@ -1,4 +1,4 @@
-sample	stats	matches
+sequence	stats	matches
 TTTTGATAAAATATGCTGATATTAAGT	{'U': 10}	{}
 TTTTGTTGAGAACCACCAGCAGAAGAA	{'U': 10}	{}
 TTTTGGTTTTTCTATGGGCTGCATAGG	{'U': 10}	{}

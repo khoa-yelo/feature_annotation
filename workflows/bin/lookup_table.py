@@ -75,11 +75,18 @@ def clean_lookup_out(raw_lookup_out, output_file, header):
     df_lookup_out[1] = df_lookup_out[1].apply(lambda x: {k: v for k, v in x.items() if v > 0})
     df_lookup_out[0] = df_lookup_out[0].apply(lambda x: {k: v for k, v in x.items() if any(v)})
     # name column matches, stats 
-    df_lookup_out.columns = ["matches", "stats", "sample"]
-    df_lookup_out = df_lookup_out[["sample", "stats", "matches"]]
+    df_lookup_out.columns = ["matches", "stats", "sequence"]
+    df_lookup_out = df_lookup_out[["sequence", "stats", "matches"]]
     # add column 
     df_lookup_out.to_csv(output_file, sep="\t", index=False)
 
+def merge_output(output_file, output_file_cleaned, output_file_summary):
+    df = pd.read_csv(output_file, sep="\t")
+    df_cleaned = pd.read_csv(output_file_cleaned, sep="\t")
+    df = pd.concat([df_cleaned, df], axis=1)
+    df.columns = ["sequence", "cleaned_stats", "cleaned_matches", "raw_matches", "raw_stats"]
+    df.to_csv(output_file_summary, sep="\t", index=False)
+    
 
 def run_lookup(input_file, output_file, lookup_table):
     command = f"lookup_table query --truncate_paths --stats_fmt with_stats {input_file} {lookup_table} {output_file}"
@@ -94,10 +101,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
     print(args)
     for table in args.lookup_table_paths.split(":"):
-        output_file = basename(args.input.split(".")[0] + "_" + basename(table).split(".")[0] + ".lookup_out.tsv")
-        output_file_cleaned = basename(args.input.split(".")[0] + "_" + basename(table).split(".")[0] + ".lookup_out_cleaned.tsv")
+        output_file = basename(basename(table).split(".")[0] + ".lookup_out.tsv")
+        output_file_cleaned = basename(basename(table).split(".")[0] + ".lookup_out_cleaned.tsv")
+        output_file_summary = basename(basename(table).split(".")[0] + ".lookup_out_all.tsv")
         run_lookup(args.input, output_file, table)
         print(f"Lookup table {table} complete. Output file: {output_file}")
         fasta_headers = read_fasta(args.input, output_type="pandas")["ID"]
         clean_lookup_out(output_file, output_file_cleaned, fasta_headers)
+        merge_output(output_file, output_file_cleaned, output_file_summary)
    

@@ -19,7 +19,7 @@ process Summarize {
 
     script:
     """
-    echo "cmd: python $params.bin/preprocess.py --input $params.input --input_type $params.input_type --annotate_column $params.annotate_column --output input_chunks"
-    python $params.bin/preprocess.py --input $params.input --input_type $params.input_type --annotate_column $params.annotate_column --output input_chunks
+    echo "CMD: python $params.bin/summarize.py --input_file $input_file --input_type $input_type --annotate_column $annotate_column --input_fasta $input_fasta --lookup_outs ${lookup_outs.collect { "'${it}'" }.join(' ')} --blast_outs ${blast_outs.collect { "'${it}'" }.join(' ')} --blast_outs_features ${blast_outs_features.collect { "'${it}'" }.join(' ')}"
+    python $params.bin/summarize.py --input_file $input_file --input_type $input_type --annotate_column $annotate_column --input_fasta $input_fasta --lookup_outs ${lookup_outs.collect { "'${it}'" }.join(' ')} --blast_outs ${blast_outs.collect { "'${it}'" }.join(' ')} --blast_outs_features ${blast_outs_features.collect { "'${it}'" }.join(' ')}
     """
 }

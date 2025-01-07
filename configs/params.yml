@@ -1,6 +1,6 @@
-# output root directory
+# output directory
 outdir: "/oak/stanford/groups/horence/khoa/scratch/repos/feature_annotation/test_data/outs"
-temp_dir: "/scratch/groups/horence/khoa/tmp"
+# bin contain scripts that run processes
 bin: "/oak/stanford/groups/horence/khoa/scratch/repos/feature_annotation/workflows/bin"
 
 blast: True # whether to use bast for annotation
@@ -12,4 +12,5 @@ lookup_table_paths: '/oak/stanford/groups/horence/khoa/shares/lookup_tables/arti
 input_type: "tsv"
 # which column in tsv is used for annotation
 annotate_column: "anchor"
+# input: either tsv or fasta
 input: /oak/stanford/groups/horence/khoa/scratch/repos/feature_annotation/test_data/test_inputs/seqs.tsv

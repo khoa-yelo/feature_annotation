@@ -1,0 +1,201 @@
+sequence	cleaned_stats	cleaned_matches	raw_matches	raw_stats
+TTTTGATAAAATATGCTGATATTAAGT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTGAGAACCACCAGCAGAAGAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGTTTTTCTATGGGCTGCATAGG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGTTGTTGCCGCCGGAAATAACA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTGATCTCTTGCCAGATTCTGC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTGCGCTTTCCGAGTGTATTTAC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGTTTTTCATAATGCGAAAAGTC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGTGCTTATTATTAGCAAGTTCT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGACTAGCATGATCCGCCTTTGAT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCAATGGTGTGGGAACTGATTAT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGATAATTCATGGGGGACGTGGTA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGCAACTACTAATAAAGCCACCT	{'U': 10}	{}	P, P, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTTTTGACAAAATTTGGTAAGAAAT	{'U': 8, 'P': 2}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGTAAATCTGGCAATACACTTGT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAGATCCACAATTCCTTGTGTGA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAATATCAGGAGAAAATGAAGAC	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTCCACTTGACAATATTTCTTCG	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCATCAATTTGACATCGGTGACA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCTCAATTCATTGATTCTGTCAC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGATATTGTGGGAAATTCAGATAC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCAATTACTTTGCAATATCATAC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAGATGCATTTGATGGTTACGCT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTAAATTAATAAACCAACCAACC	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAGCAGTTTGGAAAGATCCCCAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGAAAGATTTAAATACAACTGAA	{'U': 10}	{}	P, P, P, P, P, P, P, P, P, P	1: 0, 2: 0, 3: 0, 4: 0, U: 0, P: 10, N: 0
+TTTTTATTATCAAAAAATCACTTGTAC	{'P': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTACCCTTTGGTGCTTTCAAAG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATGGATGAGATAGATAAGGTAC	{'U': 10}	{}	P, P, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTTTTCATTAAGACCAGAAATACTA	{'U': 8, 'P': 2}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTAATGAAACTTTTAACAGTAGT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAAATTTCAGTCGACAATTACGG	{'U': 10}	{}	U, U, U, P, P, P, P, P, P, P	1: 0, 2: 0, 3: 0, 4: 0, U: 3, P: 7, N: 0
+TTTTTAAAAAGAATGAAAAAATAACAA	{'P': 7, 'U': 3}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGAATATTCTGTATAATGTAGATG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGAAGTTATAAAATTAAATTCTTG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAAATAATTTTATGAGCAAAAGC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGATAATAAATAATTCAAAGACG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGCTGATGATTATTATATGGTTTT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTGGTTTGATGAGATCTAATTG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATTTTAATTTGACCAGGCTGAG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAACAGAGAATTTTAACCAAAAT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTATTGATTAATTCTGCTTTGG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTTGTTGGTGAAATCCCTACGA	{'U': 10}	{}	P, P, P, P, P, P, P, P, P, U	1: 0, 2: 0, 3: 0, 4: 0, U: 1, P: 9, N: 0
+TTTTGATATTTTTTGTTTTGTACTGCA	{'P': 9, 'U': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGCAATCACTTTATCCGGGATATC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, P	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTGAAAGTAGAAATGATCCAAAAAA	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTAGCTCTTCTTCAGAAGATAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTTGTGTTAAATCCGTAATACG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTAAAATCAAAGTATTTTCAATA	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGTTCCATTATTTGAAGAATAC	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATTAGTTTTCAAATCTTTAATT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAGAATTAAACTAGTAGCGAGGG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTGTTGCCAGACAACCCACACC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCAAAATAAAATGGGTTTTTCAC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTCCTCAATGCTCTCTAACAATG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTTTTGGTTTTTCCATATTTTT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTACCACTGGATTCATCATCATCA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGCATTAATAATTGAATTATTATA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCAAACGAGATTTGGTTTTGATT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGGGGCCTTGGATAAAGAACAAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATGAATATAACGACAAAATGAG	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTCGAGTTCAGTTTCAAGCATCA	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTAAGGGAAATAGTCTTGAAAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATATTCGACATTGTTTTCAATA	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTATTTGTTTCAACCCTTACACT	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGTAGAAATGAAAATCTGCACAC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATTACTTCATTAGATCGCTAAC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGGTTGATTACTGATTATACTAG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCGACTGGAGTTTCTCATTATCT	{'U': 10}	{}	P, P, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTTTTAAAGTACTTAAAGATCCCAA	{'U': 8, 'P': 2}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGCAACAGTGAATTCAAAATCCAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATTGATTTATTCCAGGATTGCC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGATATTATATATAAGTTCATACT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGTTATTGCAGTTGCGTTCTGTT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAAACTTTCGATGACATCATCAT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATATTTTATATGGGGAAAAGAG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAATTTCTGATAAATATGATATT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGTGACTCTGGCTCTTCTTCTTC	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGTAAGCCAAAAGCAATAAAAG	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCCTAGTGCAGAATTTCTTTAAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTGGGAATGTCTGCTTTATTCT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGAATGAGCTTTAGATGAAGTTTT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGATCTTAAACCAAGATTCTTT	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCCTTTCAAATCGTAAATGTACC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGAACGGAAATAGATACTCACACA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATTTTCCAATGTATAGTGTTAA	{'U': 10}	{}	P, P, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTTTTACTATCACTGATTCTAGACC	{'U': 8, 'P': 2}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCAGCAGTAGCAATAGTAATAAC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTATATTCTTCATAACCATCACA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAAAATCATTAGATGTGACTAAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTGTTTGTTGTATTTGATAATT	{'U': 10}	{}	P, P, P, P, P, P, P, P, P, P	1: 0, 2: 0, 3: 0, 4: 0, U: 0, P: 10, N: 0
+TTTTTTACCACATTTTTTACCACAACC	{'P': 10}	{}	P, P, P, P, P, P, P, P, P, P	1: 0, 2: 0, 3: 0, 4: 0, U: 0, P: 10, N: 0
+TTTTGAATTGCTTTTTTTATTATTATT	{'P': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTAATTTGTTTGTTTGGTGTCGT	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGAAAATCAAGCTTATAAAATTAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTCTACTTTTTGTCAAACTAAC	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGCATCCCCTCCAATTGTTAAT	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTAGTTAATAGATTGAAAATACT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTAAATAATCACAAGCTGATTCA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGAGGACGAATACAAGAGAGTTCT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGAATGACGATGACTGTTGTGGT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGATAATACACCAAGCGCTGAAA	{'U': 10}	{}	P, P, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTTTTGTATTTGTACACCTTAACTG	{'U': 8, 'P': 2}	{}	P, P, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTTTTCATTGTAGGGGTTTTCTTTG	{'U': 8, 'P': 2}	{}	P, P, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTTTTATATCCCAGATAGAAATTCC	{'U': 8, 'P': 2}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGTTAGTAAAGAAGACATTTAGT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGATTGGACCAGGAACTGGTGTTG	{'U': 10}	{}	P, P, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTTTTAACTGATTTTGAATTTGATG	{'U': 8, 'P': 2}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGTTATTCCCACTACCACTACC	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTTTCATCACAATCACCATCAT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTACATGACTAAAAGGGAAGCTCT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTACGGAAACTATAAATTTTGTA	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTCAATCTTATGAGCCAAATCA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTTCACATTATAATGAAATAAG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCGTATCTTTCGCCTGGTTGAAG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTGTTCTTGTCGTAAGAAAATA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTGTTTTGTGTGAGCCCTTTGGC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGCTCTTGAATTTAATGGAAGTG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTCATGTATGATCCAAATAATT	{'U': 10}	{}	U, U, U, U, U, U, U, P, P, P	1: 0, 2: 0, 3: 0, 4: 0, U: 7, P: 3, N: 0
+TTTTTGTTGAAACAAAAACTTTTTTTG	{'U': 7, 'P': 3}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTAATTATGATAATTGGAGAGG	{'U': 10}	{}	P, P, P, P, P, P, P, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 3, P: 7, N: 0
+TTTTTTAAAAAAGGGTGTTTGAGTGTG	{'P': 7, 'U': 3}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGCAGCAAATCTTGAATAAAACG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATCTTATTCTTTTTCTTTTCTT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGCACGACCAAAAAGCGTACTT	{'U': 9, 'P': 1}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTATCTTTCGGTTGATCACCACC	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTTTTCCTAAACTGCGTTGTTG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGGGTTTGTTTTGGATGAAGGGA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGCAGAATGCTTTGTTTTGTGCG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTAGAATCTACTTGGTGATTAG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCATATTCTCAATGCAGTTAGCT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCAAATGGTAAACTAAGCTCGTG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGATATATCGATGAGTTATTACT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGTCAACCTTCATTTGCCGTTG	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTATTGCGTTGTACACGACTAT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTGAATAAATTAAGGGTTTAAG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTAATTCTGATTTGGGTTGTTTG	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGAAAAGTTATCCATCCCTCTG	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCAATTTCTCATTTTCCATTTCT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCTATACATTGATGGCTACTCTA	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTCGGTATGGTTCAGACACGCAC	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTCAGCAGCAATGGCACCATTT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAATTGTTTGTTGGATTTTTCAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTTAATATTCTTTATCTCCACC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTCATCACGTGCAGTCTCCATCT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTCCTAGTCTATCACGTGACACA	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGAATACTGATATCAATGCAGCA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGTTTGTCTTGGAGAGAAGGTGG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATATGGAGCGAGTCGTCTGACT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTCATTGTAGGGGTTTTCTTTGT	{'U': 9, 'P': 1}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGAGAAGAACTTTAATTGAAAA	{'U': 9, 'P': 1}	{}	P, P, P, P, P, P, P, P, P, P	1: 0, 2: 0, 3: 0, 4: 0, U: 0, P: 10, N: 0
+TTTTGCCAGTTTTTTACTACTTCCATT	{'P': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATTTTTGTCGCTTCGCTTTCGT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGAAATGTTTTCCAAATAACCTT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGTTTTCAAAATACCTTTAATAT	{'U': 10}	{}	P, U, P, P, P, P, P, P, P, P	1: 0, 2: 0, 3: 0, 4: 0, U: 1, P: 9, N: 0
+TTTTTTGTTAGTGATTTTTTCGTTTGT	{'P': 9, 'U': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTCTGTCTTCAATGTCGTCCGAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCAAGATCAAATATTTCCTTCAA	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTCGAATTAATCTGTTCTAATAA	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGATGAAAAGTATAAACTTTGAGT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTCACCAAAAAGTGTTAAGATAA	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGAAAAATCCAATTTACGTTCTT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGTATAAAGGATTTTCAACAAGT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGCATCCTTTGTGATAATTTAGA	{'U': 10}	{}	U, U, U, U, U, U, U, U, P, P	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTGCGCAGCCTTACGTAATTTTTTT	{'U': 8, 'P': 2}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTGCAGCAATTGCAAATTGTTTG	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGTGGTTACACTGAAATCGTCGC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGGTTTTTGTACCTGAAAGGGGA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTAGAATGATACCTTCATATAC	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTCTTCATTTCATCTAATTCTTC	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTTTGTTTGTTTCGTATTTAGTT	{'U': 10}	{}	P, P, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 8, P: 2, N: 0
+TTTTTTTCCATGATGATGGATTTTATT	{'U': 8, 'P': 2}	{}	P, U, U, U, U, P, P, P, P, P	1: 0, 2: 0, 3: 0, 4: 0, U: 4, P: 6, N: 0
+TTTTTTGAATTTTGCAATTTTTTCGTC	{'P': 6, 'U': 4}	{}	U, U, U, U, U, U, U, U, U, P	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTGACAAAACTTTCCCCTGAAAAAA	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTCTTAAACAATTTAACCAATTGTC	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTAATATGTGCTCTTAGAAAACC	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGAATCTCTTTACTCAAGTATCT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGTCTGTATACTTATTGATATCT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCAATTACCATTTCCGTTTGTTG	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTCTTAATTGTCAGAAATAAAAG	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGGGGATTCTGCATTGTACTTCT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGTGTAAGATTTCTTATTCCCTAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGCAGAATATACTCTTGCAATACC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGTTTTTGTTTTTGTTTTTCTTT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGCTTGAACAACAAATGTCGCAA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGCAGATTCCGTTGGTGCTGTAGA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAACAAGATAGGAAAATTAACTA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGATTTTAGTTATTACAATAGAAC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTAGAATTAGCATGATCAACGGAT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTATATATTGAAGTTTAAAGAAG	{'U': 9, 'P': 1}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTATTATGATTTGGTGTGCAAAA	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTCATGACGGAAATATGGATATTG	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGGATTTCTAGCTATTCAACAA	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGGCTTACGACCTCTTCTACCTTT	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGTATTTGTGGAGTTTGAGTAT	{'U': 9, 'P': 1}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGAACTTTCTTGACAATTTTACC	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGCCATAAGTTTCTTCTTCTATTT	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTGAAGATGTACTTGTTTTTCTGGA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTATCGGGAATTATAATTTTGCCA	{'U': 10}	{}	U, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 10, P: 0, N: 0
+TTTTTGTTTGAAATAACAATAGTATTC	{'U': 10}	{}	P, U, U, U, U, U, U, U, U, U	1: 0, 2: 0, 3: 0, 4: 0, U: 9, P: 1, N: 0
+TTTTTTGGAATAGAAATATGGTTGGCG	{'U': 9, 'P': 1}	{}		
