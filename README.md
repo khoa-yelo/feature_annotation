@@ -1,24 +1,23 @@
 # Feature Annotation
 
 ## Overview
-Tool to annotate DNA sequence with BLAST and Lookup table.
-User can optionally run either BLAST, Lookup table or both.
-Lookup table is ran on a list of specified input tables.
+This pipeline annotates DNA sequences using two complementary methods: BLAST and lookup table queries. Users can choose to run either BLAST, lookup table, or both. In addition, a lookup table process supports multiple input lookup tables. 
 
-Repo structure
+Repository Structure
 
-- configs: folder containing input params and Nextflow run config
-- containers: stores Docker image used in pipeline
-- modules: contains Processes in pipeline
-- test_data: test input data and test outs
-- workflows: pipeline definition and scripts for each Process in `bin` directory
+- `configs`: Contains input parameters and Nextflow run configuration files.
+- `containers`: Stores the Docker image used in the pipeline.
+- `modules`: Contains Nextflow processes that execute individual tasks.
+- `test_data`: Provides test inputs and example outputs for verification.
+- `workflows`: Contains the main pipeline definition and scripts located in the bin directory.
+
 
 ## Method
 
 ### Inputs
 
-- Either `fasta` or `tsv` file with specified column used for annotation (e.g. anchor)
-- A list of built lookup tables to query from
+- A `fasta` or a `tsv` file with specified column used for annotation (e.g. anchor)
+- A list of built lookup tables to query against.
 
 Input params should be specified in `configs/params.yml`
 
@@ -44,24 +43,48 @@ Details of outputs in each folder below
 
 
 ### Process: Preprocess
+### What it does:
 
-This process reads in input file and split the input into chunks, each chunk contains 50 sequences, for parallel processing. Output recored in `preprocessed_inputs` folder, containing splitted fasta and a copy of the input fasta file or the fasta converted version of the specified column in case of tsv input. See `workflows/bin/preprocess.py`
+- Reads the input file (FASTA or TSV) and splits it into chunks of 50 sequences for parallel processing.
+- Produces a folder (`preprocessed_inputs`) containing:
+  - A directory (`input_chunks`) with individual split FASTA files.
+  - A master FASTA file (`input.fasta`), which is either the original FASTA or a converted version of the specified column from the TSV input.
+### Script:
+```
+workflows/bin/preprocess.py
+```
 
 ### Process: Lookup_table
 
-This process runs lookup tables directly on the input with the following cmd
-
+### What it does:
+For each provided lookup table, the process runs a query using:
 ```
 lookup_table query --truncate_paths --stats_fmt with_stats {input_file} {lookup_table} {output_file}
 ```
-Output recored in `lookup_out` folder. 3 output will be generated for each table
+It produces three outputs per lookup table in the `lookup_out` folder:
 - [table_name].lookup_out.tsv: direct output of lookup table
+
+Further explanation on the meaning of each category can be found [here](https://github.com/refresh-bio/SPLASH/wiki/Lookup_table)
+
 - [table_name].lookup_out_cleaned.tsv: cleaned version of `[table_name].lookup_out.tsv`
 
     This file contain 3 columns: `sequence`, `stat`, and `matches`
     - sequence: input sequence
-    - stat: count of each category
-    - matches: the most abundance annotation within each category
+    - stat: frequency of each category
+    - matches: annotation with the highest count in each category.
+
+For example
+
+Input sequence
+1) `sequence`: TTTTCTTTCACATTATAATGAAATAAG
+
+5 kmer category 1, 2 kmer category 2, ect...
+
+2)  `stat`:	{'1': 5, '2': 2, '3': 1, '4': 1, 'U': 1}
+
+Out of 5 kmer in category 1, 3 kmer (higest count) belongs to GCA_004000535.1_ASM400053v1_genomic.fna,CP034509.1 Eukaryotic synthetic construct chromosome X.
+
+3) `matches`:	{1: [(' GCA_004000535.1_ASM400053v1_genomic.fna,CP034509.1 Eukaryotic synthetic construct chromosome X', 3)], 2: [(' GCA_004000535.1_ASM400053v1_genomic.fna,3', 1)], 3: [(' final_purged_primary.fasta ctg.000095F,botznik-chr.fa chr5,GCA_004000535.1_ASM400053v1_genomic.fna CP034498.1 Eukaryotic synthetic construct chromosome 2,Carp_GCA_019924925.1_HZGC01_genomic.fna CM034330.1 Ctenopharyngodon idella isolate HZGC_01 chromosome 6,whole genome shotgun sequence', 1)]}
 
 
 - [table_name].lookup_out_all.tsv: merged of `[table_name].lookup_out.tsv` and `[table_name].lookup_out_cleaned.tsv`
@@ -70,43 +93,50 @@ See `workflows/bin/lookup_table.py`
 
 
 ### Process: Blast
-
-BLAST is ran with the following command on each splitted chunks and outputs are recorded at `blast_outs`
-
-```
-fmt="6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseqid sgi sacc slen staxids stitle"
-
-cmd = f"blastn -outfmt '{fmt}' -query {input_fasta} -remote -db nt -out {blast_out} -evalue 0.1 -task blastn -dust no -word_size 24 -reward 1 -penalty -3 -max_target_seqs 4"
+### What it does:
+Executes BLAST on each split chunk using the following command:
 
 ```
+blastn -outfmt '6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseqid sgi sacc slen staxids stitle' -query {input_fasta} -remote -db nt -out {blast_out} -evalue 0.1 -task blastn -dust no -word_size 24 -reward 1 -penalty -3 -max_target_seqs 4
 
-BLAST output columns includes:
+```
+Definitions of output format can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK279684/#_appendices_Option_5_)
+
+The outputs are stored in `blast_outs`. BLAST output columns includes:
 ```
 ["query", "subject", "identity", "alignment_length", "mismatches", "gap_opens",\
  "q_start", "q_end", "s_start", "s_end", "evalue", "bit_score", "sgi", \
  "sacc", "slen", "staxids", "stitle"]
 ```
 
-See `workflows/bin/blast.py`
+### Script:
+```
+workflows/bin/blast.py
+```
 
+## Process: BLAST Extract Features
 
-### Process: Blast extract feature
-
-This process extracts annotations of subject sequence overlapped or within 5000 nucleotide of query sequence using `Bio.Entrex`. These are features such as CDS, genes, amino acid sequences. See `workflows/bin/blast_extract_features.py`
-
-Outputs are recorded at `blast_features_outs`
-Output file contains 4 columns:
-- query: input sequence
-- identity: identity to subject sequence	
-- features: annotation from Entrez of the overlapped region
-- features_5000_window: annotaions within 5000 nt of the overlapped region
+### What it does:
+- Extracts annotations from NCBI using the `Bio.Entrez` library.
+- **Annotation Extraction:**
+  - **Overlapped Region:** Region on the subject sequence that directly overlaps the BLAST alignment.
+  - **5000 nt Window:** Annotations from features located within 5000 nucleotides upstream or downstream of the BLAST hit.
+- **Conventions and Details:**
+  - If multiple features (e.g., CDS, gene, regulatory elements) are found in the overlapped region, they are reported in a single field, separated by a delimiter (e.g., comma).
+  - Features include information on whether they are in the sense or antisense orientation relative to the query.
+  - The output is stored in `blast_features_outs` with four columns:
+    - `query`: The input sequence.
+    - `identity`: Percent identity to the subject sequence.
+    - `features`: Annotations of the directly overlapped region.
+    - `features_5000_window`: Annotations within a 5000 nucleotide window around the BLAST hit.
 
 
 ### Process: Summarize
 
-This process merge all outputs of lookup tables (use *.lookup_out_all.tsv files), blast, and blast features into a single `annotation.tsv` file recorded at `summary`. See `workflows/bin/summarize.py`
-
-In case of multiple hits, subject sequence with highest identity is kept.
+### What it does:
+- Merges the outputs from lookup tables (`*.lookup_out_all.tsv` files), BLAST results, and BLAST feature extractions.
+- Retains the subject with the highest percent identity in cases of multiple BLAST hits.
+- Outputs consolidated results as `annotation.tsv` in the `summary` folder.
 
 
 ## Usage
@@ -126,15 +156,23 @@ nextflow run workflows/feature_annotate.nf -c configs/run.config -params-file co
 
 ## Example
 
-In this example, input params is set to run on 200 anchors in `seqs.tsv` in `test_data`. 200 sequences will be spliited into 4 chunks for parallel processing.
+In this example, input params is set to run on 200 anchors in `seqs.tsv` (this is an output from SPLASH) in `test_data`. 200 sequences will be spliited into 4 chunks for parallel processing.
 
 2 look up tables is specified:
 - `/oak/stanford/groups/horence/khoa/shares/lookup_tables/artifacts.slt` was built from `/oak/stanford/groups/horence/khoa/shares/lookup_tables/artifacts.txt`
-- `/oak/stanford/groups/horence/khoa/shares/lookup_tables/common_microbe_w_trnx.slt` was built from 
-    - `/oak/stanford/groups/horence/khoa/shares/lookup_tables/microbial_list.txt` 
-    - `/oak/stanford/groups/horence/khoa/shares/lookup_tables/microbes_transcriptomes.txt`(transcriptomes)
 
+### Lookup Table Build Process:
+Lookup tables are built using the provided `build_lookup_table.py` script.
 
+#### Example: Artifacts Lookup Table
+```
+build_lookup_table.py --poly_ACGT_len 6 --kmer_len 18 --bin_path /path/to/splash/bin --outname /path/to/lookup_tables/artifacts.slt /path/to/lookup_tables/artifacts.txt
+```
+
+#### Example: Common Microbe with Transcriptomes Lookup Table
+```
+build_lookup_table.py --poly_ACGT_len 6 --kmer_len 18 --bin_path /path/to/splash/bin --outname /path/to/lookup_tables/common_microbe_w_trnx.slt --transcriptomes /path/to/lookup_tables/microbes_transcriptomes.txt /path/to/lookup_tables/microbial_list.txt
+```
 
 
 `params.yml` file:
