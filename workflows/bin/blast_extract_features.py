@@ -47,13 +47,21 @@ def find_overlapping_features(record, window_start, window_end):
     return overlapping_features
 
 def featurize_blast_out(blast_out, window=5000):
+    # Check for empty file
+    if os.path.getsize(blast_out) == 0:
+        return pd.DataFrame(columns=["query", "identity", "features", f"features_{window}_window"])
+
     df = pd.read_csv(blast_out, sep="\t", header=None)
-    df.columns = ["query", "subject", "identity", "alignment_length", "mismatches", "gap_opens",\
-                     "q_start", "q_end", "s_start", "s_end", "evalue", "bit_score", "sgi", \
-                        "sacc", "slen", "staxids", "stitle"]
+    df.columns = [
+        "query", "subject", "identity", "alignment_length", "mismatches", "gap_opens",
+        "q_start", "q_end", "s_start", "s_end", "evalue", "bit_score", "sgi",
+        "sacc", "slen", "staxids", "stitle"
+    ]
+
     df["features"] = None
     df[f"features_{window}_window"] = None
     sacc_records = {}
+
     for sacc in df["sacc"].unique():
         sacc_records[sacc] = fetch_sequence(sacc)
 
@@ -61,14 +69,14 @@ def featurize_blast_out(blast_out, window=5000):
         record = sacc_records[row["sacc"]]
         features = find_overlapping_features(record, row["s_start"], row["s_end"])
         df.at[index, "features"] = features
+
         # get the window
         window_start = max(row["s_start"] - window, 0)
         window_end = row["s_end"] + window
         features = find_overlapping_features(record, window_start, window_end)
         df.at[index, f"features_{window}_window"] = features
-    
-    return df[["query", "identity", "features", f"features_{window}_window"]]
 
+    return df[["query", "identity", "features", f"features_{window}_window"]]
 
 if __name__ == "__main__":
     
