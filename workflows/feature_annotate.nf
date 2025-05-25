@@ -19,5 +19,5 @@ workflow {
         ch_blast_out = Blast(ch_processed_input.input_chunks.flatten())
         ch_blast_feat_out = Blast_extract_features(ch_blast_out.blast_outs.flatten())
     }
-    Summarize(params.input, params.input_type, params.annotate_column, ch_processed_input.input_fasta, ch_lookup_table_out.lookup_out_all.collect(), ch_blast_out.blast_outs.collect(), ch_blast_feat_out.blast_outs_features.collect())
+    // Summarize(params.input, params.input_type, params.annotate_column, ch_processed_input.input_fasta, ch_lookup_table_out.lookup_out_all.collect(), ch_blast_out.blast_outs.collect(), ch_blast_feat_out.blast_outs_features.collect())
 }

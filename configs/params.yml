@@ -1,16 +1,16 @@
 # output directory
-outdir: "/oak/stanford/groups/horence/khoa/scratch/repos/feature_annotation/test_data/outs"
+outdir: "/oak/stanford/scg/lab_mpsnyder/khoa/repos/feature_annotation/outs"
 # bin contain scripts that run processes
-bin: "/oak/stanford/groups/horence/khoa/scratch/repos/feature_annotation/workflows/bin"
+bin: "/oak/stanford/scg/lab_mpsnyder/khoa/repos/feature_annotation/workflows/bin"
 
 blast: True # whether to use bast for annotation
-lookup_table: True # whether to use lookup table for annotation
+lookup_table: False # whether to use lookup table for annotation
 # path to lookup tables used for query (path1:path2:path3...)
-lookup_table_paths: '/oak/stanford/groups/horence/khoa/shares/lookup_tables/artifacts.slt:/oak/stanford/groups/horence/khoa/shares/lookup_tables/common_microbe_w_trnx.slt'
+lookup_table_paths: ''
 
 # input_type either fasta or tsv
-input_type: "tsv"
+input_type: "fasta"
 # which column in tsv is used for annotation
 annotate_column: "anchor"
 # input: either tsv or fasta
-input: /oak/stanford/groups/horence/khoa/scratch/repos/feature_annotation/test_data/test_inputs/seqs.tsv
+input: "/oak/stanford/scg/lab_mpsnyder/khoa/data/crispr/spacer_out/407563-CL12882-Z0050-CACATGGCAGCACAGAT/Final_spacers.nr.denoised.hq.fna"
